@@ -13,5 +13,21 @@
         <input type="submit" value="Agregar">
     </form>
 
+    <br/> 
+    <table border="1">
+        <tr>
+
+            <td> Nombre de la tarea </td>
+            <td> Acción </td>
+
+        </tr>
+
+        <tr>
+
+            <td> Hacer </td>
+            <td> X </td>
+
+        </tr>
+    </table>
 </body>
 </html>

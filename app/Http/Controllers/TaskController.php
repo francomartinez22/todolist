@@ -12,7 +12,7 @@ class TaskController extends Controller
      */
     public function index()
     {
-        //
+        return view('task.index');
     }
 
     /**
@@ -24,11 +24,15 @@ class TaskController extends Controller
     }
 
     /**
-     * Store a newly created resource in storage.
+     * Store a newly created resource in storage.      Retorno a la raiz
      */
+
     public function store(Request $request)
     {
         //
+        $task=request()->all();
+        Task::create($task);
+        return redirect('/');            
     }
 
     /**
